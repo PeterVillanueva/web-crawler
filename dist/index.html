@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crawler — A little spider. A world of information.</title>
+  <meta name="description" content="An interactive web crawler playground. Follow a 3D spider through the web and learn how discovery, crawling, and indexing work.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/style.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body data-barba="wrapper">
+  <a class="skip-link" href="#main">Skip to playground</a>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Crawler home"><img src="/favicon.svg" alt="" width="32" height="32">crawler<span class="brand-period">.</span></a>
+    <nav aria-label="Main navigation"><a href="/" data-nav="playground" aria-current="page">Playground</a><a href="/about.html" data-nav="about">About</a></nav>
+    <span class="header-note">AN EXPERIMENT IN DISCOVERY</span>
+  </header>
+  <main id="main" data-barba="container" data-barba-namespace="playground" tabindex="-1">
+    <section class="playground" aria-labelledby="hero-title">
+      <div class="intro">
+        <div class="eyebrow"><span class="tiny-cross">✳</span> THE WEB, ONE LINK AT A TIME</div>
+        <h1 id="hero-title">Small spider.<br>Big <span class="web-word">web<svg viewBox="0 0 290 26" aria-hidden="true"><path d="M3 17Q126 -2 284 10M27 24Q175 7 272 19"/></svg></span>.</h1>
+        <p class="intro-copy">Every search starts with a little exploration. <br>Meet the crawler. Let it loose on the web.</p>
+        <div class="scroll-prompt"><span class="scroll-icon" aria-hidden="true"></span><span>Scroll the page. See what sticks.</span></div>
+        <div class="field-notes">
+          <p class="label">A SMALL TOUCH. A CHAIN REACTION.</p>
+          <div class="effect-legend"><span><i class="sample-highlight">Aa</i> Highlight</span><span><i class="sample-link">Aa</i> Link</span><span><i class="sample-grow">Aa</i> Grow</span><span><i class="sample-tilt">Aa</i> Tilt</span><span><i class="sample-outline">Aa</i> Outline</span><span><i class="sample-fall">Aa</i> Fall</span></div>
+        </div>
+        <p class="simulation-note">A playful simulation. Real crawlers read pages;<br>this one leaves a few footprints.</p>
+      </div>
+      <div class="lab">
+        <div class="lab-topline"><span><span class="live-dot"></span> LIVE PLAYGROUND</span><span class="specimen">SPECIMEN_001</span></div>
+        <div class="document-window">
+          <div class="document-toolbar"><div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div><span class="document-url">the-internet / a-little-bit-of-everything</span><span aria-hidden="true">⌘</span></div>
+          <div class="document-stage">
+            <div class="document-scroll" tabindex="0" role="region" aria-label="Scrollable crawler playground. Scroll to move the spider and transform text.">
+              <article class="web-document">
+                <div class="doc-kicker"><span class="crawlable">DOCUMENT 001</span><span class="crawlable">text/html · 200 OK</span></div>
+                <h2><span class="crawlable">Hello,</span> <span class="crawlable">wide</span><br><span class="crawlable">wild</span> <span class="crawlable">web.</span><span class="doc-asterisk crawlable">✳</span></h2>
+                <p class="document-lead"><span class="crawlable">A collection of ideas,</span> <span class="crawlable">happy accidents,</span><br><span class="crawlable">and things worth finding.</span></p>
+                <div class="document-rule"></div>
+                <div class="doc-two-column"><div><span class="doc-label crawlable">01 / FIELD NOTES</span><h3><span class="crawlable">Everything</span><br><span class="crawlable">is connected.</span></h3></div><p><span class="crawlable">One page leads to another.</span> <span class="crawlable">An idea becomes a link.</span> <span class="crawlable">A link becomes a rabbit hole.</span> <span class="crawlable">Keep following your curiosity.</span></p></div>
+                <div class="code-block"><div class="code-caption">a tiny piece of the internet <span>HTML</span></div><code><span class="crawlable">&lt;a href="/somewhere-new"&gt;</span><br>  <span class="crawlable">there's more to discover</span><br><span class="crawlable">&lt;/a&gt;</span></code></div>
+                <div class="doc-two-column list-section"><div><span class="doc-label crawlable">02 / THINGS TO COLLECT</span><ul><li><span class="crawlable">Unfinished thoughts</span></li><li><span class="crawlable">Unexpected connections</span></li><li><span class="crawlable">Very good questions</span></li><li><span class="crawlable">A different point of view</span></li></ul></div><div class="giant-number"><span class="crawlable">8</span><p class="crawlable">legs. endless possibilities.</p></div></div>
+                <blockquote><span class="crawlable">“Not all those</span><br><span class="crawlable">who wander</span><br><span class="crawlable">are lost.”</span><cite>J. R. R. TOLKIEN</cite></blockquote>
+                <div class="doc-label crawlable">03 / BY THE NUMBERS</div><div class="number-row"><div><b class="crawlable">200</b><span>all good</span></div><div><b class="crawlable">301</b><span>moved on</span></div><div><b class="crawlable">404</b><span>not here</span></div></div>
+                <h3 class="big-doc-heading"><span class="crawlable">Follow the links.</span><br><span class="crawlable">Find something new.</span></h3>
+                <p><span class="crawlable">The web is a living library.</span> <span class="crawlable">New pages appear.</span> <span class="crawlable">Old ones change.</span> <span class="crawlable">Some disappear.</span> <span class="crawlable">A crawler keeps exploring.</span></p>
+                <div class="code-block"><div class="code-caption">field-journal.js <span>JS</span></div><code><span class="crawlable">const frontier = [seedURL];</span><br><span class="crawlable">while (frontier.length) {</span><br>  <span class="crawlable">await discover(frontier.shift());</span><br><span class="crawlable">}</span></code></div>
+                <div class="end-note"><span class="crawlable">You've reached the edge.</span><strong class="crawlable">For now.</strong><p>Scroll back up. There is always another way through.</p></div>
+              </article>
+            </div>
+            <div class="spider-layer" aria-hidden="true"><div class="spider-mount"></div><span class="spider-tag">CRAWLER_01</span></div>
+            <div class="scroll-cue">SCROLL TO EXPLORE <span>↓</span></div>
+          </div>
+          <div class="lab-controls"><div class="crawl-status"><span class="live-dot"></span><span id="crawl-state" role="status">Ready to explore</span></div><div class="control-actions"><button id="pause" aria-label="Pause crawler" aria-pressed="false"><span class="pause-glyph" aria-hidden="true">Ⅱ</span><span class="control-text">Pause</span></button><button id="reset"><span aria-hidden="true">↻</span> Reset</button></div></div>
+        </div>
+        <div class="lab-bottomline"><span><b id="touch-count">000</b> ELEMENTS DISCOVERED</span><span class="scroll-progress">EXPLORING <b id="progress-count">0%</b></span></div>
+      </div>
+    </section>
+    <footer class="page-footer"><span>BUILT FOR THE CURIOUS.</span><span>DISCOVER. CONNECT. REPEAT.</span><a href="/about.html">How does a crawler actually work?</a></footer>
+  </main>
+  <div class="transition-curtain" aria-hidden="true"><span>following the thread<span class="curtain-dot">.</span></span></div>
+</body>
+</html>

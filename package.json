@@ -1,0 +1,13 @@
+{
+  "name": "crawler-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "build": "esbuild src/main.js --bundle --minify --sourcemap --format=esm --outfile=dist/app.js",
+    "watch": "esbuild src/main.js --bundle --format=esm --outfile=dist/app.js --watch"
+  },
+  "dependencies": { "@barba/core": "^2.10.3", "gsap": "^3.13.0", "three": "^0.180.0" },
+  "devDependencies": { "esbuild": "^0.25.10" }
+}
